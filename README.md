@@ -7,7 +7,7 @@ This repository contains a server-side demo code in PHP and Node.js.
 
 [**Try the demo**](http://kodus.pl:8080/)
 
-<sub><sup>\* except tiny Declarative Shadow DOM polyfill for older browsers.</sup></sub>
+<sub><sup>\* except optional tiny Declarative Shadow DOM polyfill for older browsers.</sup></sub>
 
 ## License
 

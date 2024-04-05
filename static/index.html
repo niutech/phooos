@@ -8,36 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
     <template shadowrootmode="open">
         <link rel="stylesheet" href="style.css">
-        <section>
-            <header>
-                <h1>Pure HTML Out-Of-Order Streaming</h1>
-                <p>without JavaScript (except tiny Declarative Shadow DOM polyfill for older browsers)</p>
-            </header>
-            <aside>
-                <slot name="part-1">
-                    <div class="spinner"></div>
-                </slot>
-            </aside>
-            <aside>
-                <slot name="part-2">
-                    <div class="spinner"></div>
-                </slot>
-            </aside>
-            <aside>
-                <slot name="part-3">
-                    <div class="spinner"></div>
-                </slot>
-            </aside>
-        </section>
+        <main>
+            <section>
+                <header>
+                    <h1>Pure HTML Out-Of-Order Streaming</h1>
+                    <p>without JavaScript (except optional tiny Declarative Shadow DOM polyfill for older browsers)</p>
+                </header>
+                <aside>
+                    <slot name="part-1">
+                        <div class="spinner"></div>
+                    </slot>
+                </aside>
+                <aside>
+                    <slot name="part-2">
+                        <div class="spinner"></div>
+                    </slot>
+                </aside>
+                <aside>
+                    <slot name="part-3">
+                        <div class="spinner"></div>
+                    </slot>
+                </aside>
+            </section>
+        </main>
     </template>
     <script>
         // Declarative Shadow DOM polyfill
         HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||function c(d){d.querySelectorAll("template[shadowrootmode]").forEach(a=>{var b=a.getAttribute("shadowrootmode");b=a.parentNode.attachShadow({mode:b});b.appendChild(a.content);a.remove();c(b)})}(document);
     </script>
     <!-- parts -->
-</main>
 </body>
 </html>
