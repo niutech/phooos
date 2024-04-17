@@ -10,32 +10,35 @@
 <body>
     <template shadowrootmode="open">
         <link rel="stylesheet" href="style.css">
-        <main>
-            <section>
-                <header>
+        <div class="container grid-xl">
+            <header class="hero hero-sm">
+                <div class="hero-body">
                     <h1>Pure HTML Out-Of-Order Streaming</h1>
-                    <p>without JavaScript (except optional tiny Declarative Shadow DOM polyfill for older browsers)</p>
-                </header>
-                <aside>
+                    <p>No JavaScript! <small>(except optional tiny Declarative Shadow DOM polyfill for older browsers)</small></p>
+                    <p><a href="https://github.com/niutech/phooos" class="btn" target="_blank">Source code on GitHub</a></p>
+                </div>
+            </header>
+            <div class="columns">
+                <div class="column col-4 col-md-12">
                     <slot name="part-1">
-                        <div class="spinner"></div>
+                        <div class="loading loading-lg"></div>
                     </slot>
-                </aside>
-                <aside>
+                </div>
+                <div class="column col-4 col-md-12">
                     <slot name="part-2">
-                        <div class="spinner"></div>
+                        <div class="loading loading-lg"></div>
                     </slot>
-                </aside>
-                <aside>
+                </div>
+                <div class="column col-4 col-md-12">
                     <slot name="part-3">
-                        <div class="spinner"></div>
+                        <div class="loading loading-lg"></div>
                     </slot>
-                </aside>
-            </section>
-        </main>
+                </div>
+            </div>
+        </div>
     </template>
     <script>
-        // Declarative Shadow DOM polyfill
+        // Optional Declarative Shadow DOM polyfill
         HTMLTemplateElement.prototype.hasOwnProperty("shadowRootMode")||function c(d){d.querySelectorAll("template[shadowrootmode]").forEach(a=>{var b=a.getAttribute("shadowrootmode");b=a.parentNode.attachShadow({mode:b});b.appendChild(a.content);a.remove();c(b)})}(document);
     </script>
     <!-- parts -->

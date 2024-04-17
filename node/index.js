@@ -1,7 +1,7 @@
 const fs = require("fs");
 const express = require("express");
 const app = express();
-const port = 8000;
+const port = 8080;
 
 app.get("/", (req, res, next) => {
     const indexFile = "../static/index.html";
