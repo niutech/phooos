@@ -1,28 +1,41 @@
 <div slot="part-1" class="card card-shadow mb-2">
   <div class="card-header">
-    <div class="card-title h5">Tabs</div>
+    <div class="card-title h5">Accordions</div>
     <div class="card-subtitle text-gray">Using Spectre.css</div>
   </div>
   <div class="card-body">
-    <div class="tab tab-block">
-      <input type="radio" name="tab" id="tab-1" checked>
-      <label class="tab-item" for="tab-1">Pure</label>
-      <input type="radio" name="tab" id="tab-2">
-      <label class="tab-item" for="tab-2">CSS</label>
-      <input type="radio" name="tab" id="tab-3">
-      <label class="tab-item" for="tab-3">Tabs</label>
-      <div class="tab-panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="accordion">
+      <input id="accordion-1" type="radio" name="accordion-radio" hidden checked>
+      <label class="accordion-header c-hand" for="accordion-1"><i class="icon icon-arrow-right mr-1"></i>Look man!</label>
+      <div class="accordion-body">
+        <ul class="menu menu-nav">
+          <li class="menu-item"><a href="#accordions">Lorem ipsum</a></li>
+          <li class="menu-item"><a href="#accordions">Dolor sit amet</a></li>
+        </ul>
       </div>
-      <div class="tab-panel">
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="accordion">
+      <input id="accordion-2" type="radio" name="accordion-radio" hidden>
+      <label class="accordion-header c-hand" for="accordion-2"><i class="icon icon-arrow-right mr-1"></i>No JavaScript!</label>
+      <div class="accordion-body">
+        <ul class="menu menu-nav">
+          <li class="menu-item"><a href="#accordions">Consectetur</a></li>
+          <li class="menu-item"><a href="#accordions">Adipiscing elit</a></li>
+        </ul>
       </div>
-      <div class="tab-panel">
-        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
+    </div>
+    <div class="accordion">
+      <input id="accordion-3" type="radio" name="accordion-radio" hidden>
+      <label class="accordion-header c-hand" for="accordion-3"><i class="icon icon-arrow-right mr-1"></i>Only CSS!</label>
+      <div class="accordion-body">
+        <ul class="menu menu-nav">
+          <li class="menu-item"><a href="#accordions">Sed do eiusmod</a></li>
+          <li class="menu-item"><a href="#accordions">Tempor incididunt</a></li>
+        </ul>
       </div>
     </div>
   </div>
   <div class="card-footer">
-    <a href="https://niutech.github.io/spectre/components/tabs.html" class="btn" target="_blank">More about tabs</a>
+    <a href="https://niutech.github.io/spectre/components/accordions.html" class="btn" target="_blank">More about accordions</a>
   </div>
 </div>
