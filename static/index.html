@@ -10,11 +10,11 @@
 <body>
     <template shadowrootmode="open">
         <link rel="stylesheet" href="style.css">
-        <div class="container grid-xl">
+        <div class="container grid-lg">
             <header class="hero hero-sm">
                 <div class="hero-body text-center">
                     <h1>Pure HTML Out-Of-Order Streaming</h1>
-                    <p>No JavaScript! <small>(except optional tiny Declarative Shadow DOM polyfill for older browsers)</small></p>
+                    <p>Pure HTML &amp; CSS, <abbr title="Except optional tiny Declarative Shadow DOM polyfill for older browsers">no JavaScript</abbr>!</p>
                     <p><a href="https://github.com/niutech/phooos" class="btn" target="_blank">Source code on GitHub</a></p>
                 </div>
             </header>
@@ -47,6 +47,23 @@
                     </slot>
                 </div>
             </div>
+            <div class="hero hero-sm">
+                <div class="hero-body">
+                    <h2>How it works</h2>
+                    <p>Pure HTML Out-Of-Order Streaming (PHOOOS) is a HTML streaming technique based on <a href="https://caniuse.com/declarative-shadow-dom" target="_blank">widely supported</a> <a href="https://developer.chrome.com/docs/css-ui/declarative-shadow-dom" target="_blank">Declarative Shadow DOM</a>, as described in the recent <a href="https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/" target="_blank">article by Chris Haynes</a>.</p>
+                    <p>PHOOOS consists of three ingredients:</p>
+                    <ol>
+                        <li>App shell (index.html) containing the global Declarative Shadow DOM template with CSS styles, slots for partials and the special placeholder <code>&lt;!-- parts --&gt;</code>where partials will be injected.</li>
+                        <li>Partials (part-*.html) containing e.g. components with dynamic data obtained from database, which can take some time.</li>
+                        <li>Web server (Node.js/PHP/etc.) serving the app shell first, then out-of-order streaming partials asynchronously.</li>
+                    </ol>
+                    <p>For interactivity, you can use e.g. a lightweight pure CSS framework <a href="https://niutech.github.io/spectre/" target="_blank">Spectre.css</a> or a tiny HTML microframework <a href="https://leanrada.com/htmz/" target="_blank">HTMZ</a>.
+                    <p>You can find the Node.js/PHP server-side demo app source code and static HTML/CSS files on <a href="https://github.com/niutech/phooos" target="_blank">GitHub</a>.</p>
+                </div>
+            </div>
+            <footer class="p-2 text-center">
+                <p>&copy; 2024 Jerzy Głowacki under MIT License.</p>
+            </footer>
         </div>
     </template>
     <script>

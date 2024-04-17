@@ -1,7 +1,7 @@
 Pure HTML Out-Of-Order Streaming
 ================================
 
-Out-Of-Order HTML Streaming without JavaScript<sup>\*</sup>, using Declarative Shadow DOM, as described in the [recent article by Chris Haynes](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/) and [older article by Stoyan Stefanov](https://www.phpied.com/progressive-rendering-via-multiple-flushes/).
+Out-Of-Order HTML Streaming without JavaScript<sup>\*</sup>, using Declarative Shadow DOM, as described in the [recent article by Chris Haynes](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/), going back to the [older article by Stoyan Stefanov](https://www.phpied.com/progressive-rendering-via-multiple-flushes/).
 
 This repository contains a server-side demo code in PHP and Node.js.
 
