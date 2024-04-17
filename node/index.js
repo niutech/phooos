@@ -7,7 +7,7 @@ app.get("/", (req, res, next) => {
     const indexFile = "../static/index.html";
     const partsFiles = ["../static/part-1.html", "../static/part-2.html", "../static/part-3.html"];
     const indexParts = fs.readFileSync(indexFile, "utf-8").split("<!-- parts -->");
-
+    res.set("X-Accel-Buffering", "no"); // disable output buffering
     res.type("html").write(indexParts[0]); // first part of index.html
     partsFiles.forEach(part => {
         fs.readFile(part, "utf-8", (err, data) => {

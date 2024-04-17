@@ -1,4 +1,4 @@
-<div slot="part-3" class="card card-shadow">
+<div slot="part-3" class="card card-shadow mb-2">
   <div class="card-header">
     <div class="card-title h5">Modals</div>
     <div class="card-subtitle text-gray">Using Spectre.css</div>
@@ -12,16 +12,40 @@
         </div>
         <div class="modal-body">
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h4>How about pure CSS Carousel?
+            <div class="carousel">
+              <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden checked>
+              <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden>
+              <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden>
+              <div class="carousel-container">
+                <figure class="carousel-item">
+                  <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
+                  <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://niutech.github.io/spectre/img/osx-yosemite.jpg" alt="macOS Yosemite Wallpaper" loading="lazy">
+                </figure>
+                <figure class="carousel-item">
+                  <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+                  <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://niutech.github.io/spectre/img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper" loading="lazy">
+                </figure>
+                <figure class="carousel-item">
+                  <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+                  <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="https://niutech.github.io/spectre/img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper" loading="lazy">
+                </figure>
+              </div>
+              <div class="carousel-nav">
+                <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+                <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+                <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-          <a class="btn btn-primary" href="#close">Close</a>
+          <a href="https://niutech.github.io/spectre/experimentals/carousels.html" class="btn" target="_blank">More about carousels</a>
+          <a class="btn" href="#close">Close</a>
         </div>
       </div>
     </div>
+    <br><br>
     <div class="popover popover-bottom"><a class="btn btn-primary" href="#popover">Open popover</a>
       <div class="popover-container">
         <div class="card">
@@ -33,13 +57,13 @@
             Pure CSS popovers, no JavaScript needed!
           </div>
           <div class="card-footer">
-            <a href="https://niutech.github.io/spectre/components/popovers.html" class="btn" target="_blank">More</a>
+            <a href="https://niutech.github.io/spectre/components/popovers.html" class="btn" target="_blank">More about popovers</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="card-footer">
-    <a href="https://niutech.github.io/spectre/components/modals.html" class="btn" target="_blank">More</a>
+    <a href="https://niutech.github.io/spectre/components/modals.html" class="btn" target="_blank">More about modals</a>
   </div>
 </div>

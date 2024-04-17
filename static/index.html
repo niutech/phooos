@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">
         <div class="container grid-xl">
             <header class="hero hero-sm">
-                <div class="hero-body">
+                <div class="hero-body text-center">
                     <h1>Pure HTML Out-Of-Order Streaming</h1>
                     <p>No JavaScript! <small>(except optional tiny Declarative Shadow DOM polyfill for older browsers)</small></p>
                     <p><a href="https://github.com/niutech/phooos" class="btn" target="_blank">Source code on GitHub</a></p>
@@ -21,17 +21,29 @@
             <div class="columns">
                 <div class="column col-4 col-md-12">
                     <slot name="part-1">
-                        <div class="loading loading-lg"></div>
+                        <div class="card card-shadow mb-2">
+                            <div class="card-body">
+                                <div class="loading loading-lg"></div>
+                            </div>
+                        </div>
                     </slot>
                 </div>
                 <div class="column col-4 col-md-12">
                     <slot name="part-2">
-                        <div class="loading loading-lg"></div>
+                        <div class="card card-shadow mb-2">
+                            <div class="card-body">
+                                <div class="loading loading-lg"></div>
+                            </div>
+                        </div>
                     </slot>
                 </div>
                 <div class="column col-4 col-md-12">
                     <slot name="part-3">
-                        <div class="loading loading-lg"></div>
+                        <div class="card card-shadow mb-2">
+                            <div class="card-body">
+                                <div class="loading loading-lg"></div>
+                            </div>
+                        </div>
                     </slot>
                 </div>
             </div>

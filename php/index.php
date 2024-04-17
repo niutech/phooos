@@ -4,6 +4,7 @@ use Revolt\EventLoop;
 
 @ob_end_flush();
 ob_implicit_flush();
+header("X-Accel-Buffering: no"); // disable output buffering
 
 $indexFile = "../static/index.html";
 $partsFiles = ["../static/part-1.html", "../static/part-2.html", "../static/part-3.html"];
