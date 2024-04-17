@@ -7,9 +7,9 @@ This repository contains a server-side demo code in PHP and Node.js.
 
 You may need to [turn off output buffering](https://www.jeffgeerling.com/blog/2016/streaming-php-disabling-output-buffering-php-apache-nginx-and-varnish) in your web server and enable chunked transfer encoding for HTML streaming to work.
 
-[**Try the online demo**](http://kodus.pl:8080/)
-
 <sub><sup>\* except optional tiny Declarative Shadow DOM polyfill for older browsers.</sup></sub>
+
+#### [Try the online demo](https://kodus.pl/)
 
 ## License
 
