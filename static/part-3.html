@@ -12,7 +12,7 @@
         </div>
         <div class="modal-body">
           <div class="content">
-            <h4>How about pure CSS Carousel?
+            <h6>How about pure CSS Carousel?</h6>
             <div class="carousel">
               <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden checked>
               <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden>
@@ -67,18 +67,19 @@
     <div class="modal modal-sm" id="modal2"><a class="modal-overlay" href="#close" aria-label="Close"></a>
       <div class="modal-container" role="document">
         <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close"></a>
-          <div class="modal-title h5">Modal with HTMZ</div>
+          <div class="modal-title h5">HTMZ Modal</div>
         </div>
         <div class="modal-body">
           <div class="content">
-            <p>As a bonus, you can add even more interactivity with <a href="https://leanrada.com/htmz/" target="_blank">HTMZ</a>:</p>
+            <p>As a bonus, you can add even more interactivity with <a href="https://leanrada.com/htmz/" target="_blank">HTMZ</a>!</p>
             <div id="text">
               <a href="text.html#text" class="btn btn-primary" target="htmz">Load some text</a>
             </div>
-            <iframe name="htmz" onload="setTimeout(()=>document.querySelector(contentWindow.location.hash||null)?.replaceWith(...contentDocument.body.childNodes))" hidden></iframe>
+            <iframe name="htmz" onload="setTimeout(()=>document.querySelector(contentWindow.location.hash||null)?.replaceWith(...contentDocument.body.childNodes))" loading="lazy" hidden></iframe>
           </div>
         </div>
         <div class="modal-footer">
+          <a href="https://leanrada.com/htmz/" class="btn float-left" target="_blank">More about HTMZ</a>
           <a class="btn btn-primary" href="#close" aria-label="Close">Close</a>
         </div>
       </div>
