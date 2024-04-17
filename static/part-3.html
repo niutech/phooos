@@ -75,11 +75,11 @@
             <div id="text">
               <a href="text.html#text" class="btn btn-primary" target="htmz">Load some text</a>
             </div>
-            <iframe name="htmz" onload="this.contentWindow.addEventListener('unload',()=>{setTimeout(()=>{document.querySelector(this.contentWindow.location.hash||null)?.classList.add('loading')})});setTimeout(()=>{document.querySelector(this.contentWindow.location.hash||null)?.replaceWith(...this.contentDocument.body.childNodes)});" hidden></iframe>
+            <iframe name="htmz" onload="setTimeout(()=>document.querySelector(contentWindow.location.hash||null)?.replaceWith(...contentDocument.body.childNodes))" hidden></iframe>
           </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary">Submit</button><a class="btn btn-link" href="#close" aria-label="Close">Close</a>
+          <a class="btn btn-primary" href="#close" aria-label="Close">Close</a>
         </div>
       </div>
     </div>
