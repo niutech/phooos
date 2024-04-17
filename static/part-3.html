@@ -63,6 +63,27 @@
       </div>
     </div>
     <br><br>
+    <a class="btn btn-primary" href="#modal2">Open HTMZ modal</a>
+    <div class="modal modal-sm" id="modal2"><a class="modal-overlay" href="#close" aria-label="Close"></a>
+      <div class="modal-container" role="document">
+        <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close"></a>
+          <div class="modal-title h5">Modal with HTMZ</div>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            <p>As a bonus, you can add even more interactivity with <a href="https://leanrada.com/htmz/" target="_blank">HTMZ</a>:</p>
+            <div id="text">
+              <a href="text.html#text" class="btn btn-primary" target="htmz">Load some text</a>
+            </div>
+            <iframe name="htmz" onload="this.contentWindow.addEventListener('unload',()=>{setTimeout(()=>{document.querySelector(this.contentWindow.location.hash||null)?.classList.add('loading')})});setTimeout(()=>{document.querySelector(this.contentWindow.location.hash||null)?.replaceWith(...this.contentDocument.body.childNodes)});" hidden></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Submit</button><a class="btn btn-link" href="#close" aria-label="Close">Close</a>
+        </div>
+      </div>
+    </div>
+    <br><br>
   </div>
   <div class="card-footer">
     <a href="https://niutech.github.io/spectre/components/modals.html" class="btn" target="_blank">More about modals</a>
