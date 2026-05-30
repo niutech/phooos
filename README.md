@@ -9,7 +9,7 @@ You may need to [turn off output buffering](https://www.jeffgeerling.com/blog/20
 
 <sub><sup>\* except optional tiny Declarative Shadow DOM polyfill for older browsers.</sup></sub>
 
-#### [Try the online demo](https://kodus.pl/)
+#### [Try the online demo](https://kraksped.pl/phooos/)
 
 ## License
 
